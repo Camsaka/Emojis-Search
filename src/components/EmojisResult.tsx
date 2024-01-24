@@ -1,8 +1,8 @@
 import { Box, Divider, List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
-import { Fragment, JSXElementConstructor, Key, PromiseLikeOfReactNode, ReactElement, ReactNode, ReactPortal, useEffect, useState } from "react";
+import { Fragment, Key, useEffect, useState } from "react";
 import ClipboardJS from "clipboard";
 
-export default function EmojisResult({emojis}){
+export default function EmojisResult({emojis} : {emojis : any[]}){
 
 	const [isCopied, setIsCopied] = useState(false);
 	useEffect(() => {

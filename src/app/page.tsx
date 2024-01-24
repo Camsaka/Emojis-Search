@@ -16,6 +16,7 @@ export default function Home() {
 	const handleChange = (textSearch: string) => {
 		setFilteredEmojis(filterEmojis(textSearch, 20));
 	};
+	
 	return (
 		<main className={styles.main}>
 			<Container maxWidth="sm" sx={{ backgroundColor: "Background.paper" }}>

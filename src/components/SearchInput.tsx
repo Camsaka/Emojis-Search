@@ -1,7 +1,7 @@
 import { Box, TextField } from "@mui/material";
 
-export default function SearchInput({handleChange}) {
-    function handleOnChange(e: { target: { value: any; }; }){
+export default function SearchInput({handleChange} : {handleChange : CallableFunction}) {
+    function handleOnChange(e: { target: { value: string}; }){
         handleChange(e.target.value);
     }
     return (
